@@ -239,11 +239,11 @@ namespace MaterialSkin
 
         private MaterialSkinManager()
         {
-            ROBOTO_MEDIUM_12 = new Font(LoadFont(Resources.Roboto_Medium), 12f);
-            ROBOTO_MEDIUM_10 = new Font(LoadFont(Resources.Roboto_Medium), 10f);
-            ROBOTO_REGULAR_11 = new Font(LoadFont(Resources.Roboto_Regular), 11f);
-            ROBOTO_MEDIUM_11 = new Font(LoadFont(Resources.Roboto_Medium), 11f);
-			Theme = Themes.LIGHT;
+            ROBOTO_MEDIUM_12 = new Font("맑은 고딕", 12f, FontStyle.Bold, GraphicsUnit.Point, ((byte)(129)));
+            ROBOTO_MEDIUM_10 = new Font("맑은 고딕", 10f, FontStyle.Bold, GraphicsUnit.Point, ((byte)(129)));
+            ROBOTO_REGULAR_11 = new Font("맑은 고딕", 11f, FontStyle.Bold, GraphicsUnit.Point, ((byte)(129)));
+            ROBOTO_MEDIUM_11 = new Font("맑은 고딕", 11f, FontStyle.Bold, GraphicsUnit.Point, ((byte)(129)));
+            Theme = Themes.LIGHT;
 			ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
