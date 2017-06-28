@@ -33,7 +33,10 @@ namespace MaterialSkin.Controls
         /// The skin manager.
         /// </value>
         [Browsable(false)]
-        public MaterialSkinManager SkinManager => MaterialSkinManager.Instance;
+        public MaterialSkinManager SkinManager
+        {
+            get { return MaterialSkinManager.Instance; }
+        }
 
         /// <summary>
         /// Gets or sets the state of the mouse.
@@ -54,7 +57,7 @@ namespace MaterialSkin.Controls
         /// <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
         protected override void SetBoundsCore(int x, int y, int width, int height, BoundsSpecified specified)
         {
-            base.SetBoundsCore(x, y, width, 5, specified);
+            base.SetBoundsCore(x, y, width, height, specified);
         }
 
         /// <summary>

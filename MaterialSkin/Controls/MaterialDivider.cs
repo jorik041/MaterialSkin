@@ -8,10 +8,10 @@ namespace MaterialSkin.Controls
         [Browsable(false)]
         public int Depth { get; set; }
         [Browsable(false)]
-        public MaterialSkinManager SkinManager => MaterialSkinManager.Instance;
+        public MaterialSkinManager SkinManager { get { return MaterialSkinManager.Instance; } }
         [Browsable(false)]
         public MouseState MouseState { get; set; }
-
+        
         public MaterialDivider()
         {
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);

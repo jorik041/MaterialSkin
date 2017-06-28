@@ -1,6 +1,6 @@
 ﻿namespace MaterialSkin
 {
-    public interface IMaterialControl
+    interface IMaterialControl
     {
         int Depth { get; set; }
         MaterialSkinManager SkinManager { get; }
